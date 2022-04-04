@@ -9,10 +9,10 @@ jobs:
   aur-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.2.5
+      - uses: actions/checkout@v2
 
       - name: Publish AUR package smap-git
-        uses: KSXGitHub/github-actions-deploy-aur@v2
+        uses: KSXGitHub/github-actions-deploy-aur@v2.2.5
         with:
           pkgname: smap-git
           pkgbuild: smap-git/PKGBUILD
