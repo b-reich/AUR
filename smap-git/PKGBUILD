@@ -1,4 +1,4 @@
-Maintainer: Benjamin Reich <aur@benjaminreich.de>
+#Maintainer: Benjamin Reich <aur@benjaminreich.de>
 pkgname=smap-git # '-bzr', '-git', '-hg' or '-svn'
 pkgver=0.1.0.rc.r3.gb331526
 pkgrel=1
