@@ -1,9 +1,9 @@
-name: aur-publish
+name: smap-git publish
 
 on:
   push:
-    tags:
-      - '*'
+    paths: smap-git/*
+  workflow_dispatch:
 
 jobs:
   aur-publish:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Publish AUR package
+      - name: Publish AUR package smap-git
         uses: KSXGitHub/github-actions-deploy-aur@v2
         with:
           pkgname: smap-git
