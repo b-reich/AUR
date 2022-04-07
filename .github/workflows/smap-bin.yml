@@ -1,4 +1,4 @@
-name: smap-git publish
+name: smap-bin publish
 
 on:
   push:
