@@ -6,12 +6,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  aur-publish:
+  aur-publish-smap-bin:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
-      - name: Publish AUR package smap-git
+      - name: Publish AUR package smap-bin
         uses: KSXGitHub/github-actions-deploy-aur@v2.2.5
         with:
           pkgname: smap-bin
