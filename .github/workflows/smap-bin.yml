@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Publish AUR package smap-bin
-        uses: KSXGitHub/github-actions-deploy-aur@v2.2.5
+        uses: KSXGitHub/github-actions-deploy-aur@v2
         with:
           pkgname: smap-bin
           pkgbuild: smap-bin/PKGBUILD
@@ -21,3 +21,4 @@ jobs:
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
           commit_message: Update AUR package
           ssh_keyscan_types: rsa,dsa,ecdsa,ed25519
+          test: true
